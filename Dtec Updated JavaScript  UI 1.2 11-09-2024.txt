@@ -1,0 +1,239 @@
+
+
+
+// JavaScript for exploring each section with a modal dialog
+function exploreQuantum() {
+    alert("D-Wave Ocean SDK is a powerful quantum framework used for advanced quantum-enhanced machine learning, providing unparalleled performance for high-dimensional data analysis and threat prediction.");
+}
+
+function exploreAI() {
+    alert("TensorFlow Quantum enables integration of quantum features in traditional AI/ML models, empowering DTec’s threat detection systems with adaptive, self-learning capabilities.");
+}
+
+function exploreAPI() {
+    alert("Kong and Tyk manage API connections securely, ensuring real-time monitoring, threat detection, and data protection across all API integrations in DTec's systems.");
+}
+
+function exploreEndpoint() {
+    alert("Endpoint Agents provide local monitoring on each device, with an isolated kill switch feature that protects the entire network by isolating compromised devices when necessary.");
+}
+
+
+
+// Plan data
+const planData = {
+    "Basic": { cost: 19.99, benefits: ["Quantum-Safe Encryption", "Attack Monitoring", "Threefish-256", "SHAKE-128", "Basic Key Exchange"] },
+    "Pro": { cost: 39.99, benefits: ["Threefish-512", "SHAKE-256", "Advanced Key Exchange", "Real-Time Threat Monitoring"] },
+    "Advance": { cost: 59.99, benefits: ["SHAKE-512", "Lattice-Based Authentication", "Dynamic Key Management", "Priority Support"] },
+    "Enterprise": { cost: 99.99, benefits: ["Threefish Custom", "SHAKE-1024", "Custom Digital Signature", "Network Detection"] }
+};
+
+// State variables for selection
+let selectedPlan = null;
+
+// Select plan button click handler
+document.querySelectorAll(".select-plan").forEach(button => {
+    button.addEventListener("click", (event) => {
+        // Determine selected plan based on clicked button
+        selectedPlan = event.target.parentNode.querySelector("h3").textContent.replace(" Plan", "");
+        updatePricingSummary();
+    });
+});
+
+// Update pricing summary with selected plan and total
+function updatePricingSummary() {
+    if (selectedPlan) {
+        const plan = planData[selectedPlan];
+        document.getElementById("selected-plan").textContent = `Selected Plan: ${selectedPlan}`;
+        document.getElementById("total-cost").textContent = `Total Monthly Cost: $${plan.cost.toFixed(2)}`;
+    }
+}
+
+// Confirm and Proceed Button (Example Purchase without actual Stripe integration)
+document.getElementById("confirm-selection").addEventListener("click", () => {
+    if (!selectedPlan) {
+        alert("Please select a plan before proceeding.");
+    } else {
+        alert(`You have selected the ${selectedPlan} plan. Total cost: $${planData[selectedPlan].cost}/month.`);
+    }
+});
+
+// Stripe Payment Button (Example of Integration Placeholder)
+document.getElementById("stripe-payment").addEventListener("click", () => {
+    if (!selectedPlan) {
+        alert("Please select a plan to proceed with payment.");
+        return;
+    }
+    
+    // Placeholder Stripe Checkout Process
+    alert(`Redirecting to Stripe for payment of ${selectedPlan} plan ($${planData[selectedPlan].cost}/month)...`);
+    // Stripe checkout code would go here
+});
+
+// Optional Dynamic Floating Image Color Change
+const floatingImages = document.querySelectorAll(".floating-image");
+
+floatingImages.forEach(image => {
+    setInterval(() => {
+        image.style.background = `linear-gradient(45deg, ${getRandomColor()}, ${getRandomColor()}, ${getRandomColor()})`;
+    }, 2000);
+});
+
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+// Cryptographic Operations Section
+document.getElementById("encrypt-btn").addEventListener("click", () => {
+    const encryptionType = document.getElementById("encryption-type").value;
+    const message = document.getElementById("input-message").value;
+    let encryptedMessage = "";
+
+    switch (encryptionType) {
+        case "AES":
+            encryptedMessage = aesEncrypt(message);
+            break;
+        case "RSA":
+            encryptedMessage = rsaEncrypt(message);
+            break;
+        case "ECC":
+            encryptedMessage = eccEncrypt(message);
+            break;
+        case "IDTec":
+            encryptedMessage = idtecEncrypt(message);
+            break;
+    }
+
+    document.getElementById("output-message").value = encryptedMessage;
+});
+
+document.getElementById("decrypt-btn").addEventListener("click", () => {
+    const encryptionType = document.getElementById("encryption-type").value;
+    const encryptedMessage = document.getElementById("output-message").value;
+    let decryptedMessage = "";
+
+    switch (encryptionType) {
+        case "AES":
+            decryptedMessage = aesDecrypt(encryptedMessage);
+            break;
+        case "RSA":
+            decryptedMessage = rsaDecrypt(encryptedMessage);
+            break;
+        case "ECC":
+            decryptedMessage = eccDecrypt(encryptedMessage);
+            break;
+        case "IDTec":
+            decryptedMessage = idtecDecrypt(encryptedMessage);
+            break;
+    }
+
+    document.getElementById("output-message").value = decryptedMessage;
+});
+
+// Placeholder cryptographic functions
+function aesEncrypt(text) { return btoa(text); }
+function aesDecrypt(text) { return atob(text); }
+function rsaEncrypt(text) { return btoa(text.split("").reverse().join("")); }
+function rsaDecrypt(text) { return atob(text).split("").reverse().join(""); }
+function eccEncrypt(text) { return btoa(text.split("").map(char => String.fromCharCode(char.charCodeAt(0) + 1)).join("")); }
+function eccDecrypt(text) { return atob(text).split("").map(char => String.fromCharCode(char.charCodeAt(0) - 1)).join(""); }
+function idtecEncrypt(text) { return btoa(text.split("").map((char, i) => String.fromCharCode(char.charCodeAt(0) ^ i)).join("")); }
+function idtecDecrypt(text) { return atob(text).split("").map((char, i) => String.fromCharCode(char.charCodeAt(0) ^ i)).join(""); }
+
+
+
+
+
+// AI, ML, and LLM Attack Monitoring
+let attackCount = 0;
+let defenseCount = 0;
+let deleteCount = 0;
+let monitoringActive = false;
+let monitoringInterval;
+
+function simulateAttackDetection() {
+    const attackTypes = ["DDoS", "Malware", "Phishing", "Brute Force", "Ransomware"];
+    const attackType = attackTypes[Math.floor(Math.random() * attackTypes.length)];
+    const timestamp = new Date().toLocaleString();
+
+    attackCount++;
+    defenseCount += Math.random() > 0.5 ? 1 : 0;
+    deleteCount += Math.random() > 0.8 ? 1 : 0;
+
+    document.getElementById("attack-count").textContent = attackCount;
+    document.getElementById("defense-count").textContent = defenseCount;
+    document.getElementById("delete-count").textContent = deleteCount;
+
+    const logContainer = document.getElementById("log-container");
+    const logEntry = document.createElement("div");
+    logEntry.className = "log-entry";
+    logEntry.textContent = `Attack Detected: ${attackType} at ${timestamp}`;
+    logContainer.appendChild(logEntry);
+    logContainer.scrollTop = logContainer.scrollHeight;
+}
+
+// Start and Stop Monitoring
+document.getElementById("start-monitoring").addEventListener("click", () => {
+    if (!monitoringActive) {
+        monitoringActive = true;
+        monitoringInterval = setInterval(simulateAttackDetection, 2000);
+    }
+});
+
+document.getElementById("stop-monitoring").addEventListener("click", () => {
+    monitoringActive = false;
+    clearInterval(monitoringInterval);
+});
+
+
+
+
+// Simulate Status Updates for Dashboard Items
+function updateDashboardStatus() {
+    document.getElementById("quantum-status").textContent = "Active";
+    document.getElementById("ai-ml-status-text").textContent = "Monitoring Threats";
+    document.getElementById("api-status").textContent = "All Connections Secure";
+    document.getElementById("endpoint-status").textContent = "All Endpoints Monitored";
+}
+
+// Simulate Status Updates for Individual Agents
+const agentStatuses = [
+    { device: "Device X", status: "Active" },
+    { device: "Device Y", status: "Kill Switch Engaged" },
+    { device: "Device Z", status: "Offline" }
+];
+
+function updateAgentStatuses() {
+    agentStatuses.forEach(agent => {
+        const agentElement = document.querySelector(`.agent[data-device="${agent.device}"] .agent-status`);
+        if (agentElement) {
+            agentElement.textContent = agent.status;
+            agentElement.style.color = getStatusColor(agent.status);
+        }
+    });
+}
+
+// Helper function to get color based on status
+function getStatusColor(status) {
+    switch (status) {
+        case "Active":
+            return "green";
+        case "Kill Switch Engaged":
+            return "red";
+        case "Offline":
+            return "gray";
+        default:
+            return "black";
+    }
+}
+
+// Initialize the Dashboard and Agent Statuses
+window.onload = function() {
+    updateDashboardStatus();
+    updateAgentStatuses();
+};

@@ -1,0 +1,333 @@
+
+
+    <!-- Full-Length Header -->
+    <header class="header-bar">
+        <img src="background-image:" alt="--DTec Encryption--"> <!-- Replace with actual logo path -->
+        <h1>DTec IronClad Quantum Defense System ---------------- DTec Cybersecurity</h1>
+           </header>
+
+<img src="https://assets.codepen.io/13318103/DTec.png" alt="" />
+
+<background-image: url("https://assets.codepen.io/13318103/DTec+08+Brand+Image.webp");
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTec Quantum Defense Layers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main>
+        <!-- Quantum Computing Framework Section -->
+        <section id="quantum-computing">
+            <h2>Quantum Computing Framework: Secure Detection</h2>
+            <p>DTec utilizes the quantum-enhanced machine learning (ML) capabilities. This layer provides rapid, high-dimensional data analysis for threat detection, pattern recognition, and predictive analytics.</p>
+            <button class="explore-btn" onclick="exploreQuantum()">Explore Quantum Computing Setup</button>
+        </section>
+
+        <!-- AI/ML Libraries for Threat Detection -->
+        <section id="ai-ml-libraries">
+            <h2>AI/ML Libraries: Quantum</h2>
+            <p>DTec integrates quantum features into traditional AI/ML models, enhancing the learning and detection capabilities of threat detection systems.</p>
+            <button class="explore-btn" onclick="exploreAI()">Explore AI/ML Integration</button>
+        </section>
+
+        <!-- API Management Tools -->
+        <section id="api-management">
+            <h2>API Management: Secure API Connections</h2>
+            <p>DTec’s API layer securely manage, monitor, and protect API connections across all integration levels, ensuring safe data exchange and connection integrity.</p>
+            <button class="explore-btn" onclick="exploreAPI()">Explore API Management</button>
+        </section>
+
+        <!-- Endpoint Agent for Device-Level Security -->
+        <section id="endpoint-agent">
+            <h2>Endpoint Agents: Local Monitoring and Isolation</h2>
+            <p>DTec deploys endpoint agents to monitor each device individually.</p>
+            <button class="explore-btn" onclick="exploreEndpoint()">Explore Endpoint Agents</button>
+        </section>
+    </main>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTec Cybersecurity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTec Cybersecurity - Signup and Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Signup and Login Forms Section -->
+    <section id="auth-forms">
+        <!-- Login Form -->
+        <div class="auth-form" id="login">
+            <h3>Login</h3>
+            <form>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="auth-form" id="signup">
+            <h3>Sign Up</h3>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+  
+  
+
+  <img src="https://assets.codepen.io/13318103/A+cutting+edge+imge+quantum+encryption+DTec+tool.webp" alt="" />
+  
+    <!-- Classical vs. Quantum Comparison -->
+    <section id="comparison">
+        <div class="comparison-item">
+            <img src="classical-computer.jpg" alt="Classical Computer Defense">
+            <p><strong>Classical Computer Defense:</strong> Limited speed and capabilities in handling complex cybersecurity tasks, with vulnerability to advanced threats over time.</p>
+        </div>
+        <div class="comparison-item">
+            <img src="quantum-computer.jpg" alt="Quantum Computer Defense">
+            <p><strong>Quantum Computer Defense:</strong> Exceptional processing power for rapid threat detection and response, with advanced quantum-safe encryption for modern defenses.</p>
+        </div>
+    </section>
+
+  <img src="https://assets.codepen.io/13318103/c10aaa4d-8fd0-46ea-b2d4-1d6314ffbe87.png" alt="" />
+  
+    <!-- Navigation Bar for Plan Benefits -->
+    <nav id="plan-benefits">
+        <ul>
+            <li><a href="#basic-plan">Basic Plan Benefits</a></li>
+            <li><a href="#pro-plan">Pro Plan Benefits</a></li>
+            <li><a href="#advance-plan">Advance Plan Benefits</a></li>
+            <li><a href="#enterprise-plan">Enterprise Plan Benefits</a></li>
+        </ul>
+    </nav>
+  
+    <!-- Plan Selection Section -->
+    <section id="plan-selection">
+        <h2>Select Your Plan</h2>
+
+        <div class="plan" id="basic-plan">
+            <div class="floating-image" id="basic-img"></div>
+            <h3>Basic Plan</h3>
+            <p>Starting quantum encryption features for security</p>
+            <ul>
+                <li>Basic Quantum-Safe Encryption</li>
+                <li>Real-Time Attack Monitoring</li>
+                <li>Threefish-256 Symmetric Encryption</li>
+                <li>SHAKE-128 Hashing</li>
+                <li>Basic RLWE Key Exchange</li>
+                <li>Basic Activity Logging</li>
+            </ul>
+            <button class="select-plan">Select Basic</button>
+            <p class="plan-price">$19.99</p>
+        </div>
+
+        <div class="plan" id="pro-plan">
+            <div class="floating-image" id="pro-img"></div>
+            <h3>Pro Plan</h3>
+            <p>Advanced quantum encryption features</p>
+            <ul>
+                <li>Threefish-512 Symmetric Encryption</li>
+                <li>SHAKE-256 Hashing</li>
+                <li>Advanced RLWE Key Exchange</li>
+                <li>Real-Time Threat Monitoring</li>
+                <li>Enhanced Activity Logging</li>
+            </ul>
+            <button class="select-plan">Select Pro</button>
+            <p class="plan-price">$39.99</p>
+        </div>
+
+        <div class="plan" id="advance-plan">
+            <div class="floating-image" id="advance-img"></div>
+            <h3>Advance Plan</h3>
+            <p>High-level security and monitoring</p>
+            <ul>
+                <li>SHAKE-512 Hashing</li>
+                <li>Digital Signature with Lattice-Based Authentication</li>
+                <li>Dynamic Key Management</li>
+                <li>Priority Support & Security Audits</li>
+            </ul>
+            <button class="select-plan">Select Advance</button>
+            <p class="plan-price">$59.99</p>
+        </div>
+
+        <div class="plan" id="enterprise-plan">
+            <div class="floating-image" id="enterprise-img"></div>
+            <h3>Enterprise Plan</h3>
+            <p>Enterprise-grade quantum encryption</p>
+            <ul>
+                <li>Threefish Custom Encryption Suite</li>
+                <li>SHAKE-1024 Hashing for Data Integrity</li>
+                <li>Fully Customized Digital Signature Schemes</li>
+                <li>Comprehensive Network Threat Detection</li>
+                <li>24/7 Dedicated Support & Compliance Audits</li>
+            </ul>
+            <button class="select-plan">Select Enterprise</button>
+            <p class="plan-price">$99.99</p>
+        </div>
+    </section>
+
+    <!-- Pricing Summary with Stripe Integration -->
+    <section id="pricing-summary">
+        <h2>Pricing Summary</h2>
+        <p id="selected-plan">Selected Plan: None</p>
+        <p id="total-cost">Total Monthly Cost: $0</p>
+        <button id="confirm-selection">Confirm and Proceed</button>
+        <button id="stripe-payment">Secure Purchase with Stripe</button>
+    </section>
+
+  
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTec Cybersecurity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cryptographic Operations Section -->
+    <section id="crypto-operations">
+        <h2>Cryptographic Operations</h2>
+        <label for="encryption-type">Choose Encryption Type:</label>
+        <select id="encryption-type">
+            <option value="AES">AES</option>
+            <option value="RSA">RSA</option>
+            <option value="ECC">ECC</option>
+            <option value="IDTec">IDTec (Quantum-Resistant)</option>
+        </select>
+
+        <label for="input-message">Message to Encrypt:</label>
+        <textarea id="input-message" placeholder="Enter your message"></textarea>
+
+        <button id="encrypt-btn">Encrypt</button>
+        <button id="decrypt-btn">Decrypt</button>
+
+        <label for="output-message">Result:</label>
+        <textarea id="output-message" placeholder="Encrypted/Decrypted message" readonly></textarea>
+    </section>
+
+    <!-- AI, ML, and LLM Attack Monitoring Section -->
+    <section id="attack-monitoring">
+        <h2>AI, ML, and LLM Attack Monitoring</h2>
+        <div class="monitoring-stats">
+            <div>Attack Count: <span id="attack-count">0</span></div>
+            <div>Successful Defenses: <span id="defense-count">0</span></div>
+            <div>Deletions: <span id="delete-count">0</span></div>
+        </div>
+
+        <!-- Attack Log -->
+        <div id="attack-log">
+            <h3>Attack Log</h3>
+            <div id="log-container"></div>
+        </div>
+
+        <!-- Start/Stop Monitoring Buttons -->
+        <button id="start-monitoring">Start Monitoring</button>
+        <button id="stop-monitoring">Stop Monitoring</button>
+    </section>
+
+  
+  
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTec Security Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header-bar">
+        <img src="image.png" alt="--- image ---" class="image"> <!-- Replace with actual image path -->
+        <h1>DTec Integrated Security Dashboard</h1>
+    </header>
+
+    <!-- Integrated Security Dashboard -->
+    <main>
+        <section id="security-dashboard">
+            <h2>Integrated Security Dashboard</h2>
+            <div class="dashboard-item" id="quantum-computing-status">
+                <h3>Quantum Computing (D-Wave Ocean SDK)</h3>
+                <p>Status: <span id="quantum-status">Initializing...</span></p>
+            </div>
+            <div class="dashboard-item" id="ai-ml-status">
+                <h3>AI/ML Libraries (TensorFlow Quantum)</h3>
+                <p>Status: <span id="ai-ml-status-text">Initializing...</span></p>
+            </div>
+            <div class="dashboard-item" id="api-management-status">
+                <h3>API Management (Kong/Tyk)</h3>
+                <p>Status: <span id="api-status">Initializing...</span></p>
+            </div>
+            <div class="dashboard-item" id="endpoint-agents-status">
+                <h3>Endpoint Agents</h3>
+                <p>Status: <span id="endpoint-status">Initializing...</span></p>
+            </div>
+        </section>
+
+        <!-- Individual Endpoint Agent Status -->
+        <section id="agent-status">
+            <h2>Individual Endpoint Agent Status</h2>
+            <div id="agent-list">
+                <div class="agent" data-device="Device X">
+                    <h4>Device X</h4>
+                    <p>Status: <span class="agent-status">Active</span></p>
+                </div>
+                <div class="agent" data-device="Device Y">
+                    <h4>Device Y</h4>
+                    <p>Status: <span class="agent-status">Kill Switch Engaged</span></p>
+                </div>
+                <div class="agent" data-device="Device Z">
+                    <h4>Device Z</h4>
+                    <p>Status: <span class="agent-status">Offline</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+  
+  
+  <img src="https://assets.codepen.io/13318103/DTec+08+Brand+Image.webp" alt="" />
+  <img src="https://assets.codepen.io/13318103/DTec+30+Young+%26+Old.webp" alt="" />
+ 
+    <!-- Footer with Trademark -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 DTec Cybersecurity. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
